@@ -1,0 +1,325 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------**---scrollbar style----**----- */
+
+
+::-webkit-scrollbar {
+  width: 12px;
+ }
+ 
+ ::-webkit-scrollbar-track{
+  background-color: #7d8592;
+ }
+::-webkit-scrollbar-thumb {
+  background-color: #ff7006;
+}
+ 
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ff72065f;
+
+}
+
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #343637;
+  background-image: linear-gradient(30deg,#2c3133,#0a2f42);
+  min-height: 100vh;
+}
+
+/* ---------header----------- */
+
+header{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 80px;
+  overflow: hidden;
+}
+header .list-link {
+  width: 500px;
+}
+header .list-link ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+header .list-link ul li a{
+  padding: 15px 30px;
+  margin: 0 0 0 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+header .list-link ul li .actve{
+  background-color: #b46464;
+}
+header .list-link ul li .link:hover{
+  background-color: #51879c3d;
+}
+header .list-link ul li .link{
+  transition: all 0.7s;
+}
+header .logo{
+  color: #fff;
+  font-size: 30px;
+  cursor:context-menu;
+  
+}
+
+/* ----------------------------- */
+
+/* -----------main content--------- */
+
+.aternos{
+  color: #ff7006;
+  width: 100%;
+  overflow: hidden;
+
+}
+.aternos h1{
+  border-bottom: solid #6596ae;
+  width: 60%;
+  margin: 20px auto 30px;
+  color: #fff;
+
+}
+.aternos p{
+  font-size: 30px;
+  background-color: #4f7a8c33;
+  width:450px;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 20px;
+  border: solid;
+  animation: aterons 5s infinite linear;
+}
+@keyframes aterons{
+  0%{
+  border: solid;
+  }
+  50%{
+  border: solid #4f7a8c;
+
+  }
+  100%{
+  border: solid;
+
+  }
+}
+
+
+
+
+section h1{
+  border-bottom: solid #ff7006;
+  width: 90%;
+  margin: 0 auto 40px;
+  color: #fff;
+  text-align: left;
+  font-size: 50px;
+
+}
+section{
+  padding: 50px 0;
+  position: relative;
+}
+
+.list-card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+/* ------------فريق العمل------------- */
+
+
+section .img-card {
+  background-color: #4f7a8c;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+.Ayhwm-Gamer{
+  background-image: url(/img/logo-Ayhwm\ Gamer-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---------games-العاب--------- */
+.card-games{
+  width: 80vh;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+
+} 
+img{
+width: 100%;
+height: auto;
+}
+.card-games span{
+  position: absolute;
+  top: 0;
+  left:50%;
+  transform: translate(-50%,0);
+  background-color: #ff7006;
+  padding: 20px 30px;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  font-size: 30px;
+  animation: minecraft 10s infinite linear;
+}
+
+@keyframes minecraft{
+  0%{
+  border-radius: 0 0 10px 10px;
+
+  }
+
+  50%{
+  border-radius: 0 0 30px 30px;
+
+  }
+
+  100%{
+  border-radius: 0 0 10px 10px;
+
+  }
+}
+
+/* ----------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------footer---------- */
+
+footer{
+  height: 200px;
+  display: flex;
+  justify-content:center;
+  padding: 20px;  
+
+}
+
+footer h1{
+  color: #fff;
+  border-bottom: #ff7006 solid;
+}
+.follow-us .soshilmadya ul{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0 0 0;
+
+}
+.follow-us .soshilmadya ul li{
+  margin: 0 10px;
+  
+}
+.follow-us .soshilmadya ul li a{
+  color: #fff;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+.follow-us .soshilmadya ul li a i:hover{
+  color: #ff7006;
+}
+
+.follow-us .soshilmadya ul li a i{
+  transition: all 0.5s;
+
+}
+
+
+footer .up{
+  position: fixed;
+  padding: 20px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10%;
+  border: 0;
+  background-color: #4f7a8c;
+  z-index: 1000;
+}
+
+/* ------------------------------- */
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .aternos p{
+  padding: 10px;
+  font-size: 20px;
+  width:80%;
+  }
+}
